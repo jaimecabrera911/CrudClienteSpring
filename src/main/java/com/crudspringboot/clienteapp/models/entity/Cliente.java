@@ -25,7 +25,6 @@ public class Cliente implements Serializable {
 	private String apellidos;
 	private String telefono;
 	private String email;
-	private String ciudad;
 	
 	@ManyToOne
 	@JoinColumn(name="id_ciudad")
@@ -71,14 +70,7 @@ public class Cliente implements Serializable {
 		this.email = email;
 	}
 
-	public String getCiudad() {
-		return ciudad;
-	}
-
-	public void setCiudad(String ciudad) {
-		this.ciudad = ciudad;
-	}
-
+	
 	public Ciudad getIdCiudad() {
 		return idCiudad;
 	}
@@ -90,14 +82,8 @@ public class Cliente implements Serializable {
 	@Override
 	public String toString() {
 		return "Cliente [idCliente=" + idCliente + ", nombres=" + nombres + ", apellidos=" + apellidos + ", telefono="
-				+ telefono + ", email=" + email + ", ciudad=" + ciudad + ", idCiudad=" + idCiudad + "]";
+				+ telefono + ", email=" + email + ", idCiudad=" + idCiudad + "]";
 	}
-	
-	
-	
-	
-	
 
-
-
+	
 }

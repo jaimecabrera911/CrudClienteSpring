@@ -9,7 +9,7 @@
 <body>
 	<header th:fragment="header">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand" th:href="@{/}"><strong>CRUD
+			<a class="navbar-brand" th:href="@{/home}"><strong>CRUD
 					Cliente</strong></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
@@ -20,9 +20,9 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link"
-						th:href="@{home}">Home <span class="sr-only">(current)</span>
+						th:href="@{/home}">Home <span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item active"><a class="nav-link" href="#">Cliente
+					<li class="nav-item active"><a class="nav-link" th:href="@{/views/clientes/}">Cliente
 							<span class="sr-only">(current)</span>
 					</a></li>
 				</ul>
