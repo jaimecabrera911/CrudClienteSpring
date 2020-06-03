@@ -24,6 +24,7 @@ public class Cliente implements Serializable {
 	private String nombres;
 	private String apellidos;
 	private String telefono;
+	private String direccion;
 	private String email;
 	
 	@ManyToOne
@@ -61,6 +62,15 @@ public class Cliente implements Serializable {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+	
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
 
 	public String getEmail() {
 		return email;
