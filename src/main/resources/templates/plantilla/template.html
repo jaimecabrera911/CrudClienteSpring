@@ -8,8 +8,8 @@
 </head>
 <body>
 	<header th:fragment="header">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand text-warning" th:href="@{/}"><strong>CRUD
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<a class="navbar-brand" th:href="@{/}"><strong>CRUD
 					Cliente</strong></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
@@ -17,7 +17,6 @@
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link"
@@ -35,8 +34,8 @@
 	</main>
 	<footer th:fragment="footer">
 		<div
-			class="container-fluid bg-dark text-light text-center fixed-bottom">
-			<strong class="">&copy; Coyright CRUD Cliente</strong>
+			class="container-fluid bg-primary text-light text-center fixed-bottom">
+			<strong> Coyright CRUD Cliente &copy; 2020</strong>
 		</div>
 		<script th:src="@{jquery-3.5.1.min.js}"></script>
 		<script th:src="@{js/popper.min.js}"></script>
